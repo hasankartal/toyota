@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="ExcelRevenueSummary"
+          class="com.obss.view.excel.ExcelRevenueReportView">
+    </bean>
+
+    <bean class="com.obss.controller.excel.RevenueReportController" />
+
+
+    <bean id="CityPdfRevenueSummary"
+          class="com.obss.view.pdf.city.CityPdfRevenueReportView">
+    </bean>
+
+    <bean class="com.obss.controller.pdf.city.CityReportController" />
+
+
+    <bean id="RouteTypePdfRevenueSummary"
+          class="com.obss.view.pdf.route.type.RouteTypePdfRevenueReportView">
+    </bean>
+
+    <bean class="com.obss.controller.pdf.route.type.RouteTypeReportController" />
+
+    <bean id="RoutePdfRevenueSummary"
+          class="com.obss.view.pdf.route.RoutePdfRevenueReportView">
+    </bean>
+
+    <bean class="com.obss.controller.pdf.route.RouteReportController" />
+
+    <bean id="StationPdfRevenueSummary"
+          class="com.obss.view.pdf.station.StationPdfRevenueReportView">
+    </bean>
+
+    <bean class="com.obss.controller.pdf.station.StationReportController" />
+
+</beans>
