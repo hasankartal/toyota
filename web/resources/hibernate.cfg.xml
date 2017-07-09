@@ -14,7 +14,6 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.current_session_context_class">org.hibernate.context.ThreadLocalSessionContext</property>
 
-        <mapping class="com.obss.model.SystemAdminUser"></mapping>
 
     </session-factory>
 </hibernate-configuration>
