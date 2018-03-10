@@ -35,6 +35,7 @@ public class CityServiceImpl implements CityService {
     @Override
     @Transactional
     public List<City> getCityByName(String name) {
+        String dene = "dene";
         return cityDaoImpl.getCityByName(name);
     }
 
