@@ -30,7 +30,7 @@ public class CityController {
         List<City> cityList = cityServiceImpl.getAllCity();
         model.addAttribute("newCity",new City());
         model.addAttribute("allCities", cityList);
-
+        String dene = "dene";
         return "jsp/city/city";
     }
 
